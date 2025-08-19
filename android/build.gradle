@@ -1,0 +1,56 @@
+buildscript {
+    ext.kotlin_version = '1.9.25'
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.4.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.google.gms:google-services:4.4.2'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    // This code is where all the magic happens and fixes the error.
+    subprojects {
+        afterEvaluate { project ->
+            if (project.hasProperty('android')) {
+                project.android {
+                    if (namespace == null) {
+                        namespace project.group
+                    }
+                }
+            }
+        }
+    }
+    // This code is where all the magic happens and fixes the error.
+
+    // Ensure Java compile warning flags like -Werror (introduced by some deps) don't fail the build
+    // and silence obsolete option warnings on newer JDKs.
+    subprojects { subproject ->
+        subproject.tasks.withType(org.gradle.api.tasks.compile.JavaCompile).configureEach { task ->
+            if (task.options?.compilerArgs != null) {
+                task.options.compilerArgs.removeAll(['-Werror'])
+                task.options.compilerArgs += ['-Xlint:-options']
+            }
+        }
+    }
+}
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(':app')
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

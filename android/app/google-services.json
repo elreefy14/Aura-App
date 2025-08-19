@@ -1,0 +1,105 @@
+{
+  "project_info": {
+    "project_number": "84478172895",
+    "project_id": "aura-b2ed8",
+    "storage_bucket": "aura-b2ed8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:84478172895:android:f853b9959eacf8fc49936a",
+        "android_client_info": {
+          "package_name": "com.AuraFoundationfoundation"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRxQNBeKRLT5wl53_8G6xstjqhcO5Pmik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:84478172895:android:a9dea43a0ec6b78b49936a",
+        "android_client_info": {
+          "package_name": "com.app.aura"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRxQNBeKRLT5wl53_8G6xstjqhcO5Pmik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:84478172895:android:599253c8aa677ed749936a",
+        "android_client_info": {
+          "package_name": "com.aura"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRxQNBeKRLT5wl53_8G6xstjqhcO5Pmik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:84478172895:android:bb4f9de95f82ada249936a",
+        "android_client_info": {
+          "package_name": "com.aura.cns"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRxQNBeKRLT5wl53_8G6xstjqhcO5Pmik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:84478172895:android:81432d31a55f46c249936a",
+        "android_client_info": {
+          "package_name": "com.aurafoundation"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRxQNBeKRLT5wl53_8G6xstjqhcO5Pmik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
