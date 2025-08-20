@@ -57,7 +57,6 @@
 	<array>
 		<string>fetch</string>
 		<string>remote-notification</string>
-		<string>background-processing</string>
 	</array>
 		<key>UIDeviceFamily</key>
 		<array>
